@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btnLoad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Glide.with(getApplicationContext()).load("https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.0-9/10449939_534376476674314_2613599221797329850_n.jpg?_nc_cat=0&oh=4f1a64bf5a6111b9216d5dafc5a6be78&oe=5B652E66").into(imgView);
+                Glide.with(MainActivity.this).load("https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.0-9/10449939_534376476674314_2613599221797329850_n.jpg?_nc_cat=0&oh=4f1a64bf5a6111b9216d5dafc5a6be78&oe=5B652E66").into(imgView);
                 Log.i("Load", " finished.");
             }
         });
